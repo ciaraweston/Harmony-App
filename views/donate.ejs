@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony</title>
+  <script src="https://kit.fontawesome.com/4e7f0c2d65.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="donate.css">
+</head>
+
+<body>
+  <nav>
+    <div class="profileHeader">
+      <p>harmony donations</p>
+    </div>
+    <ul>
+      <li><a href="/profile">home</a></li>
+      <li><a href="/volunteer">volunteer</a></li>
+      <li><a class="profile" href="/location">locations</a></li>
+      <li><a class="profile" href="/faq">faq</a></li>
+      <a class="profile" href="/logout" class="btn btn-default btn-sm">Sign Out</a>
+    </ul>
+  </nav>
+  <div id="container">
+
+
+
+    <div id="inputs-list" class="grid1">
+      <div>
+        <form action="/sendDonation" id="myForm" method="post">
+          <input id="input1" placeholder="Item " type="text" name="iName" required>
+      </div>
+
+      <div>
+        <input id="input2" placeholder="Quantity" type="text" name="qName" required>
+      </div>
+
+      <div>
+        <input id="input3" placeholder="Donator" type="text" name="donator" required>
+        </form>
+      </div>
+
+
+      <div>
+        <button id='submit' class="fa-list-alt"> Add </button>
+      </div>
+
+
+    </div>
+
+    <!-- heading for div table  -->
+    <div id='gridH'>
+      <div>Item</div>
+      <div>Quantity</div>
+      <div>Donator</div>
+      <div>Id</div>
+      <div>Date</div>
+      <div>Options</div>
+
+    </div>
+    <!-- contents in the div table -->
+    <div id='grid'>
+
+
+
+
+
+    </div>
+
+
+  </div>
+
+  <!-- <div class="container">
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="icon"><i class="fab fa-apple"></i></span>
+            <span class="title">
+              <h2>Harmony</h2>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="/profile">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="title">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="/location">
+            <span class="icon"><i class="fas fa-users"></i></span>
+            <span class="title">Donators</span>
+          </a>
+        </li>
+        <li>
+          <a href="/profile">
+            <span class="icon"><i class="fas fa-comments"></i></span>
+            <span class="title">Message</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index">
+            <span class="icon"><i class="fas fa-question-circle"></i></span>
+            <span class="title">Help</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index">
+            <span class="icon"><i class="fas fa-cogs"></i></span>
+            <span class="title">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="/index">
+            <span class="icon"><i class="fas fa-lock"></i></span>
+            <span class="title">Password</span>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+            <span class="title">Sign Out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <div class="topbar">
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <div class="search">
+          <label>
+            <input type="text" placeholder="Search here">
+            <i class="fa fa-search"></i>
+          </label>
+        </div>
+        <div class="user">
+          <img src="/img/favicon-32x32.png" alt="">
+        </div>
+      </div>
+
+      <div class="cardBox">
+        <div class="card">
+          <div>
+            <div class="numbers">1,042</div>
+            <div class="cardName">Daily Views</div>
+          </div>
+          <div class="iconBox">
+            <i class="far fa-eye"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">80</div>
+            <div class="cardName">Donations</div>
+          </div>
+          <div class="iconBox">
+            <i class="far fa-heart"></i>
+          </div>
+        </div>
+        <div class="card">
+          <div>
+            <div class="numbers">208</div>
+            <div class="cardName">Comments</div>
+          </div>
+          <div class="iconBox">
+            <i class="far fa-comments"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="recentDonations">
+          <div class="cardHeader">
+            <h2>Recent Donations</h2>
+            <a href="#" class="btn">View All</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <td>Description</td>
+                <td>Donation</td>
+                <td>Payment</td>
+                <td>Status</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Star Refrigerator</td>
+                <td>$1200</td>
+                <td>Donated</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>Speakers</td>
+                <td>$620</td>
+                <td>Donated</td>
+                <td><span class="status inprogress">In Progress</span></td>
+              </tr>
+              <tr>
+                <td>Window Coolers</td>
+                <td>$1020</td>
+                <td>Donated</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>Star Refrigerator</td>
+                <td>$1200</td>
+                <td>Donated</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>Speakers</td>
+                <td>$620</td>
+                <td>Donated</td>
+                <td><span class="status inprogress">In Progress</span></td>
+              </tr>
+              <tr>
+                <td>Window Coolers</td>
+                <td>$1020</td>
+                <td>Donated</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>Window Coolers</td>
+                <td>$1020</td>
+                <td>Donated</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>Star Refrigerator</td>
+                <td>$1200</td>
+                <td>Donated</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>Window Coolers</td>
+                <td>$1020</td>
+                <td>Donated</td>
+                <td><span class="status confirmed">Confirmed</span></td>
+              </tr>
+              <tr>
+                <td>Window Coolers</td>
+                <td>$1020</td>
+                <td>Donated</td>
+                <td><span class="status pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td>Star Refrigerator</td>
+                <td>$1200</td>
+                <td>Donated</td>
+                <td><span class="status pending">Pending</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="recentDonators">
+          <div class="cardHeader">
+            <h2>Recent Donators</h2>
+          </div>
+          <table>
+            <tbody>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/img/favicon-32x32.png"></div>
+                </td>
+                <td>
+                  <h4>Kenny M.<br><span>PA</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/img/favicon-32x32.png"></div>
+                </td>
+                <td>
+                  <h4>Xavier T.<br><span>PA</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/img/favicon-32x32.png"></div>
+                </td>
+                <td>
+                  <h4>Chris J.<br><span>PA</span></h4>
+                </td>
+              </tr>
+              <td width="60px">
+                <div class="imgBx"><img src="/img/favicon-32x32.png"></div>
+              </td>
+              <td>
+                <h4>Kenny M.<br><span>PA</span></h4>
+              </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/img/favicon-32x32.png"></div>
+                </td>
+                <td>
+                  <h4>Carter T.<br><span>PA</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/img/favicon-32x32.png"></div>
+                </td>
+                <td>
+                  <h4>Tonya J.<br><span>PA</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/img/favicon-32x32.png"></div>
+                </td>
+                <td>
+                  <h4>Michelle W.<br><span>PA</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/img/favicon-32x32.png"></div>
+                </td>
+                <td>
+                  <h4>Taylor W.<br><span>PA</span></h4>
+                </td>
+              </tr>
+              <tr>
+                <td width="60px">
+                  <div class="imgBx"><img src="/img/favicon-32x32.png"></div>
+                </td>
+                <td>
+                  <h4>Stephanie J.<br><span>PA</span></h4>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+  </div> -->
+  <script src="donate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony</title>
+  <link rel="stylesheet" href="volunteer.css">
+  <script src="https://kit.fontawesome.com/4e7f0c2d65.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <div>
+      <p>harmony volunteer</p>
+    </div>
+    <ul>
+      <li><a href="/profile">home</a></li>
+      <li><a href="/location">locations</a></li>
+      <li><a href="/donate">donate</a></li>
+      <li><a href="/faq">faq</a></li>
+      <a class="profile" href="/logout" class="btn btn-default btn-sm">Sign Out</a>
+    </ul>
+  </nav>
+  <div class="container">
+
+    <h1>What are your plans?</h1>
+
+    <div class="task__container">
+      <div class="task__name" id="donate" style="background-color: #f7f779;">Donate</div>
+      <div class="task__name" id="inventory" style="background-color: #f68080">Monitor Inventory</div>
+      <div class="task__name" id="awareness" style="background-color: #d497e0">Spread The Word</div>
+      <div class="task__name" id="fridge" style="background-color: #539aeb">Clean Fridge</div>
+      <div class="task__name" id="deselect">Deselect All</div>
+
+    </div>
+
+    <h3>Add selected task to the schedule</h3>
+
+    <div class="schedule__container">
+      <div class="days__container">
+        <span class="corner"></span>
+        <div class="day">Sunday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+      </div>
+      <div class="part__day">
+        <span class="time">8am <br> - <br> 12pm</span>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+      </div>
+      <div class="part__day">
+        <span class="time">12pm <br> - <br> 2pm</span>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+      </div>
+      <div class="part__day">
+        <span class="time">2pm <br> - <br> 6pm</span>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+      </div>
+      <div class="part__day">
+        <span class="time">6pm <br> - <br> 9pm</span>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+      </div>
+      <div class="part__day">
+        <span class="time">9pm <br> - <br> 11pm</span>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+        <div class="task"></div>
+      </div>
+    </div>
+
+    <button class="deleteBtn">Reset Schedule</button>
+
+    <div class="pop-up__container">
+      <div class="pop-up">
+        <h4>Are you sure you want to delete all the tasks from your schedule?</h4>
+        <div class="btn__container">
+          <div class="btn__answer" id="btn__yes">YES</div>
+          <div class="btn__answer" id="btn__no">NO</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="volunteer.js"></script>
+</body>
+
+</html>

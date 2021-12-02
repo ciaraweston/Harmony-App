@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500&family=Poiret+One&family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: rgb(177, 242, 243);
+  line-height: 75px;
+  padding: 0px 100px;
+  position: fixed;
+  z-index: 1;
+}
+nav .logo {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+nav .logo p {
+  float: left;
+  background: -webkit-linear-gradient(#33ccff, #ff99cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li .wishlist {
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 0px 20px;
+}
+nav ul li .wishlist:hover {
+  color: rgb(106, 122, 150);
+}
+nav ul li {
+  color: rgb(106, 122, 150);
+}
+
+.wishlist {
+  text-transform: uppercase;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.wishlist:hover {
+  background: -webkit-linear-gradient(#33ccff, #ff99cc);
+}
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --grey: #6b7280;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --light: #eee;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+  background-color: var(--dark);
+}
+
+header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+#new-item-form {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#new-item-input {
+  flex: 1 1 0%;
+  background-color: var(--darker);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: var(--light);
+  font-size: 1.25rem;
+}
+
+#new-item-input::placeholder {
+  color: var(--grey);
+}
+
+#new-item-submit {
+  color: var(--pink);
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#new-item-submit:hover {
+  opacity: 0.8;
+}
+
+#new-item-submit:active {
+  opacity: 0.6;
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.item-list {
+  padding: 1rem;
+}
+
+.item-list h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+#items .item {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--darkest);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.item .content {
+  flex: 1 1 0%;
+}
+
+.item .content .text {
+  color: var(--light);
+  font-size: 1.125rem;
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+
+.item .content .text:not(:read-only) {
+  color: var(--pink);
+}
+
+.item .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.item .actions button {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.item .actions button:hover {
+  opacity: 0.8;
+}
+
+.item .actions button:active {
+  opacity: 0.6;
+}
+
+.item .actions .edit {
+  background-image: linear-gradient(to right, var(--pink), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.item .actions .delete {
+  color: crimson;
+}

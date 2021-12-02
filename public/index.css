@@ -1,0 +1,159 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.index-containerVideo {
+  height: 700px;
+  width: 100%;
+}
+video {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: -10;
+}
+.login-btn,
+.signup-btn {
+  color: white;
+  width: 25%;
+  height: 10%;
+  background: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 2px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.login-btn {
+  margin-left: 80%;
+  padding: 10px;
+}
+.signup-btn {
+  padding: 10px;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;300;400;500&family=Poiret+One&family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  width: 100%;
+  height: 75px;
+  background-color: #201a23;
+  /* background-color: rgb(7, 67, 136); */
+  line-height: 75px;
+  padding: 0px 100px;
+  position: fixed;
+  z-index: 1;
+}
+.logoHeader {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+nav .logoHeader p {
+  float: left;
+  background: -webkit-linear-gradient(#33ccff, #ff99cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-size: 20px;
+}
+nav ul {
+  float: right;
+}
+
+a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+a:hover {
+  background: -webkit-linear-gradient(#33ccff, #ff99cc);
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #201a23;
+}
+video {
+  height: 100vh;
+  width: 100% !important;
+  object-fit: cover;
+}
+.about-container {
+  height: 400px;
+  width: 100%;
+}
+.about-container img {
+  display: block;
+  height: 400px;
+  width: 40%;
+  float: left;
+  margin-left: 30px;
+}
+.about-container span {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 180px;
+}
+.about-container p {
+  width: 45%;
+  font-size: 22px;
+  float: right;
+  margin-top: 10px;
+}
+button {
+  display: block;
+  margin-left: 69%;
+  border: none;
+  border-radius: 5px;
+  background: black;
+}
+.harmony-fridge {
+  float: left;
+  height: 400px;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.harmony-fridge span {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.harmony-fridge p {
+  width: 45%;
+  font-size: 22px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.harmony-fridge img {
+  display: block;
+  height: 400px;
+  width: 40%;
+  float: right;
+}
+.contact-container {
+  height: 700px;
+  width: 100%;
+}
+#contact-form {
+  margin-left: 400px;
+}
+.send-btn {
+  align-items: center;
+}

@@ -1,0 +1,44 @@
+* html,
+body {
+  background: url(/img/phillyone.jpg);
+  background-size: 50%;
+}
+h1,
+label,
+p {
+  color: white;
+}
+p {
+  font-size: 20px;
+}
+a {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+a:hover {
+  background: -webkit-linear-gradient(#33ccff, #ff99cc);
+}
+.col-sm-offset-3 {
+  margin-top: 250px;
+  background-color: #201a23;
+  border-radius: 15px;
+}
+.btn-warning {
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  border-color: black;
+}
+.btn-warning:hover {
+  background: -webkit-linear-gradient(#33ccff, #ff99cc);
+}
+input.form-control {
+  border-radius: 15px;
+}

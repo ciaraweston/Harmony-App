@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony</title>
+  <link rel="stylesheet" href="wishlist.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <p>harmony wishlist</p>
+    </div>
+    <ul>
+      <li><a class="wishlist" href="/profile">home</a></li>
+      <li><a class="wishlist" href="/location">locations</a></li>
+      <li><a class="wishlist" href="/faq">faq</a></li>
+      <li><a class="wishlist" href="/donate">donate</a></li>
+      <a class="wishlist" href="/logout" class="btn btn-default btn-sm">Sign Out</a>
+    </ul>
+  </nav>
+  <br><br><br><br>
+  <header>
+    <h1>What is missing from the Fridge?</h1>
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" id="new-item-form">
+      <input type="text" id="new-item-input" placeholder="Enter here...">
+      <input type="submit" id="new-item-submit" value="Add item">
+    </form>
+  </header>
+
+  <main>
+    <section class="item-list">
+      <h2>Items</h2>
+
+      <div id="items">
+        <!-- <div class="item">
+          <div class="content">
+            <input type="text" type="text" class="text" value="My items" readonly>
+          </div>
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+          </div>
+        </div> -->
+
+      </div>
+    </section>
+  </main>
+  <script src="wishlist.js"></script>
+</body>
+
+</html>
